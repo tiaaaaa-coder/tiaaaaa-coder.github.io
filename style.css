@@ -1,7 +1,7 @@
 body {
   font-family: 'Poppins', sans-serif;
   background-color: #fafafa;
-  color: #333;
+  color: white;
   margin: 0;
   padding: 0;
 }
@@ -11,7 +11,7 @@ header {
   background: linear-gradient(135deg, #f6c1cc, #fbe3ea);
   padding: 80px 20px;
   text-align: center;
-  color: #337;
+  color: black;
 }
 .hero h1 {
   font-family: 'Playfair Display', serif;
@@ -22,7 +22,7 @@ header {
 
 header h1 {
   font-family: 'Playfair Display', serif;
-  color: #fff;
+  color: white;
 }
 .card img {
   width: 100%;
