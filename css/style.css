@@ -8,12 +8,12 @@
     }
     header {
       background: #111;
-      color: blue;
+      color: black;
       padding: 15px;
       text-align: center;
     }
     nav a {
-      color: orange;
+      color: white;
       margin: 0 10px;
       text-decoration: none;
       font-weight: bold;
@@ -22,12 +22,17 @@
       max-width: 900px;
       margin: auto;
       padding: 20px;
-      background: burnt red;
+      background: brown;
     }
     .product {
       border-bottom: 1px solid #ddd;
       padding: 20px 0;
     }
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
     .btn {
       display: inline-block;
       background: #ff9900;
@@ -39,7 +44,7 @@
     }
     footer {
       background: #111;
-      color: orange;
+      color: brown;
       text-align: center;
       padding: 15px;
       margin-top: 20px;
