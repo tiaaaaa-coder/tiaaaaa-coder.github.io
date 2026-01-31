@@ -11,7 +11,7 @@ header {
   background: linear-gradient(135deg, #f6c1cc, #fbe3ea);
   padding: 80px 20px;
   text-align: center;
-  color: #333;
+  color: #337;
 }
 .hero h1 {
   font-family: 'Playfair Display', serif;
@@ -32,7 +32,7 @@ header h1 {
   background: #f6c1cc;
   padding: 10px 16px;
   border-radius: 8px;
-  color: white;
+  color: black;
 }
 
 
@@ -61,5 +61,5 @@ footer {
   text-align: center;
   padding: 20px;
   font-size: 14px;
-  color: #777;
+  color: #778;
 }
