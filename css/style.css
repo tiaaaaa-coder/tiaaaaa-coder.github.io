@@ -1,103 +1,123 @@
-
- :root {
+:root {
   --beige: #f5efe6;
+  --cream: #fff8f0;
   --burnt-red: #8b3a3a;
   --soft-burnt-red: #b5655f;
   --dark-text: #3a2a2a;
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
-
-body {
-  font-family: 'Poppins', sans-serif;
-  background-color: var(--beige);
-  color: var(--dark-text);
-  margin: 0;
-  padding: 0;
-}
-
-/* Header / Hero */
-header {
-  background-color: var(--brand-red);
+ header {
+  background: linear-gradient(135deg, var(--burnt-red), var(--soft-burnt-red));
+  padding-bottom: 30px;
 }
 
 .hero {
-  padding: 80px 20px;
+  padding: 100px 20px;
   text-align: center;
   color: var(--cream);
 }
 
 .hero h1 {
   font-family: 'Playfair Display', serif;
-  font-size: 48px;
-  color: var(--cream);
-  margin-bottom: 10px;
+  font-size: 52px;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
 }
 
 .hero p {
-  color: #f5e6da;
-  font-size: 18px;
+  font-size: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  opacity: 0.9;
+}
+nav {
+  text-align: center;
+  margin-top: 20px;
 }
 
-/* Navigation links */
 nav a {
   color: var(--cream);
-  margin: 0 12px;
+  margin: 0 15px;
   font-weight: 500;
-  text-decoration: none;
+  letter-spacing: 0.5px;
+  position: relative;
 }
 
-nav a:hover {
-  text-decoration: underline;
+nav a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: var(--cream);
+  transition: width 0.3s ease;
 }
 
-/* Cards (products / posts) */
+nav a:hover::after {
+  width: 100%;
+}
 .card {
-  background: #ffffff;
-  border-radius: 16px;
-  padding: 20px;
-  margin-bottom: 20px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  background: white;
+  border-radius: 20px;
+  padding: 0;
+  margin: 30px auto;
+  max-width: 320px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.12);
 }
 
 .card img {
   width: 100%;
-  border-radius: 12px;
+  height: 220px;
+  object-fit: cover;
 }
 
 .card h2 {
   font-family: 'Playfair Display', serif;
-  color: var(--brand-red);
+  color: var(--burnt-red);
+  padding: 15px 20px 5px;
 }
 
-/* Buttons */
+.card p {
+  padding: 0 20px 20px;
+  font-size: 15px;
+  line-height: 1.6;
+}
 .btn {
-  background: var(--brand-red);
-  padding: 12px 18px;
-  border-radius: 10px;
+  background: var(--burnt-red);
+  padding: 12px 20px;
+  border-radius: 30px;
   color: var(--cream);
   font-weight: 500;
   display: inline-block;
+  margin: 0 20px 20px;
+  transition: all 0.3s ease;
 }
 
 .btn:hover {
-  opacity: 0.9;
+  background: var(--soft-burnt-red);
+  transform: translateY(-3px);
 }
-
-/* Links */
-a {
-  color: var(--brand-red);
-  text-decoration: none;
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  padding: 60px 40px;
+  max-width: 1200px;
+  margin: auto;
 }
-
-a:hover {
-  text-decoration: underline;
-}
-
-/* Footer */
 footer {
-  background: var(--brand-red);
+  background: var(--burnt-red);
   text-align: center;
-  padding: 20px;
+  padding: 30px;
   font-size: 14px;
   color: var(--cream);
+  letter-spacing: 0.5px;
 }
- 
