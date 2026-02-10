@@ -1,3 +1,10 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 :root {
   --beige: #f5efe6;
   --cream: #fff8f0;
@@ -6,9 +13,17 @@
   --dark-text: #3a2a2a;
   --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
- header {
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--beige);
+  color: var(--dark-text);
+  line-height: 1.6;
+}
+
+header {
   background: linear-gradient(135deg, var(--burnt-red), var(--soft-burnt-red));
-  padding-bottom: 30px;
+  padding: 20px 40px 60px;
 }
 
 .hero {
@@ -30,9 +45,15 @@
   margin: 0 auto;
   opacity: 0.9;
 }
+
+/* Sticky Nav */
 nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: var(--burnt-red);
+  padding: 15px 0;
   text-align: center;
-  margin-top: 20px;
 }
 
 nav a {
@@ -57,15 +78,30 @@ nav a::after {
 nav a:hover::after {
   width: 100%;
 }
+.section-title {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: var(--burnt-red);
+}
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  padding: 60px 40px;
+  max-width: 1200px;
+  margin: auto;
+}
 .card {
   background: white;
   border-radius: 20px;
-  padding: 0;
-  margin: 30px auto;
-  max-width: 320px;
   overflow: hidden;
   box-shadow: var(--shadow);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.6s ease forwards;
 }
 
 .card:hover {
@@ -88,8 +124,8 @@ nav a:hover::after {
 .card p {
   padding: 0 20px 20px;
   font-size: 15px;
-  line-height: 1.6;
 }
+
 .btn {
   background: var(--burnt-red);
   padding: 12px 20px;
@@ -105,14 +141,6 @@ nav a:hover::after {
   background: var(--soft-burnt-red);
   transform: translateY(-3px);
 }
-.product-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 40px;
-  padding: 60px 40px;
-  max-width: 1200px;
-  margin: auto;
-}
 footer {
   background: var(--burnt-red);
   text-align: center;
@@ -122,3 +150,9 @@ footer {
   letter-spacing: 0.5px;
 }
 
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
