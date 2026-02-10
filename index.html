@@ -24,12 +24,19 @@ that are actually worth your money
     <a href="contact.html">Contact</a>
     <a href="privacy.html">Privacy Policy</a>
   </nav>
-</header>
+  <header class="hero">
+  <div class="hero-content">
+    <h1>Honest Beauty & Fashion Reviews</h1>
+    <p>Helping you choose products that are actually worth your money.</p>
+    <a href="#products" class="btn-primary">Browse Reviews</a>
+  </div>
+  </header>
 
 <div class="card">
+  <img src="images/makeup-brush.jpg" alt="Makeup Brush Set">
   <h2>Best Makeup Brush Set for Beginners</h2>
-  <p>This affordable brush set is perfect for everyday makeup and beginners.</p>
-  <a href="beauty-tool-review.html">Read full review →</a>
+  <p>This affordable brush set is perfect for everyday makeup.</p>
+  <a href="beauty-tool-review.html" class="btn">Read Review</a>
 </div>
 <div class="product">
   <h3>Best Hair Straightener Brush for Everyday Use</h3>
@@ -44,6 +51,11 @@ that are actually worth your money
   <section class="container">
   <div id="products" class="product-grid"></div>
 </section>
+  <div class="filter-buttons">
+  <button onclick="filterProducts('all')">All</button>
+  <button onclick="filterProducts('beauty')">Beauty</button>
+  <button onclick="filterProducts('hair')">Hair</button>
+</div>
 <div class="card">
   <h2>Affiliate Disclosure</h2>
   <p>
