@@ -1,29 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>About Us</title>
   <meta charset="UTF-8">
+  <title>About | Honest Beauty Reviews</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-<h1>About This Website</h1>
+<header>
+  <p>Hooked.on.you.by.jameela</p>
 
-<p>
-This website is dedicated to providing honest and helpful product reviews to assist
-users in making informed purchasing decisions. All recommendations are based on
-research, user feedback, and personal evaluation.
-</p>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="privacy.html">Privacy Policy</a>
+  </nav>
+</header>
 
-<p>
-Our goal is to save visitors time by highlighting the strengths and weaknesses of
-popular products available online.
-</p>
+<section class="hero">
+  <div class="hero-content">
+    <h1>About This Website</h1>
+  </div>
+</section>
 
-<p>
-As an Amazon Associate, this website may earn a small commission from qualifying
-purchases at no extra cost to you.
-</p>
+<section style="max-width:800px; margin:80px auto; padding:0 20px; text-align:center;">
+
+  <p>
+    This website is dedicated to providing honest and helpful beauty and fashion reviews 
+    to help you make confident purchasing decisions.
+  </p>
+
+  <p>
+    All recommendations are based on research, product testing, and real user feedback.
+    My goal is to save you time and money by highlighting what is truly worth buying.
+  </p>
+
+  <p>
+    As an Amazon Associate, I may earn a small commission from qualifying purchases 
+    at no extra cost to you.
+  </p>
+
+</section>
+
+<footer>
+  <p>© 2026 Honest Product Reviews</p>
+</footer>
 
 </body>
 </html>
-
