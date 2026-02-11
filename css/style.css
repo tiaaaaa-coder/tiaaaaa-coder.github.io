@@ -29,7 +29,7 @@ header {
 .hero {
   padding: 100px 20px;
   text-align: center;
-  color: var(--cream);
+  color: var(--soft-burnt-red);
 }
 
 .hero h1 {
