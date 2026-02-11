@@ -1,54 +1,26 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const container = document.getElementById("products");
+fetch("data/products.json")
+  .then(response => response.json())
+  .then(products => {
+    const container = document.getElementById("products");
 
-  // Show loading state
-  container.innerHTML = `<p class="loading">Loading products...</p>`;
+    products.forEach(product => {
 
-  fetch("data/products.json")
-    .then(response => {
-      if (!response.ok) {
-        throw new Error("Failed to fetch products");
-      }
-      return response.json();
-    })
-    .then(products => {
-      container.innerHTML = ""; // Clear loading message
+      const card = document.createElement("div");
+      card.className = "card";
 
-      products.forEach(product => {
-        container.appendChild(createProductCard(product));
-      });
-    })
-    .catch(error => {
-      container.innerHTML = `
-        <p class="error">
-          ⚠️ Sorry, products could not be loaded.
-        </p>
+      card.innerHTML = `
+        <img src="${product.image}" alt="${product.name}">
+        <h2>${product.name}</h2>
+        <p>${product.description}</p>
+        <a href="${product.link}" 
+           class="btn" 
+           target="_blank" 
+           rel="nofollow noopener">
+           Buy on Amazon →
+        </a>
       `;
-      console.error("Error loading products:", error);
+
+      container.appendChild(card);
     });
-});
-
-
-function createProductCard(product) {
-  const card = document.createElement("div");
-  card.classList.add("card");
-
-  card.innerHTML = `
-    <div class="card-image">
-      <img src="${product.image}" alt="${product.name}">
-    </div>
-
-    <div class="card-content">
-      <h2>${product.name}</h2>
-      <p>${product.description}</p>
-
-      <div class="card-footer">
-        <a class="btn" href="${product.link}">
-  Read Full Review →
-</a>
-      </div>
-    </div>
-  `;
-
-  return card;
-}
+  })
+  .catch(error => console.error("Error loading products:", error));
