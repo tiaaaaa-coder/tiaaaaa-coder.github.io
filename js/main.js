@@ -43,12 +43,9 @@ function createProductCard(product) {
       <p>${product.description}</p>
 
       <div class="card-footer">
-        <a class="btn" 
-           href="${product.link}" 
-           target="_blank" 
-           rel="nofollow noopener">
-          View on Amazon →
-        </a>
+        <a class="btn" href="${product.link}">
+  Read Full Review →
+</a>
       </div>
     </div>
   `;
