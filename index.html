@@ -2,68 +2,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
   <meta charset="UTF-8">
   <title>Honest Product Reviews</title>
   <meta name="description" content="Honest reviews to help you choose the best products online.">
- 
+  
 </head>
 <body>
 
 <header>
-  <p>
-Hooked.on.you.by.jameela
-</p>
+  <p>Hooked.on.you.by.jameela</p>
+
   <nav>
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
     <a href="contact.html">Contact</a>
     <a href="privacy.html">Privacy Policy</a>
   </nav>
-  <header class="hero">
+</header>
+
+<section class="hero">
   <div class="hero-content">
     <h1>Honest Beauty & Fashion Reviews</h1>
     <p>Helping you choose products that are actually worth your money.</p>
-    <a href="#products" class="btn-primary">Browse Reviews</a>
+    <a href="#products" class="btn">Browse Reviews</a>
   </div>
-  </header>
-
-<div class="card">
-  <img src="assets/makeup-brush.jpg" alt="Makeup Brush Set">
-  <h2>Best Makeup Brush Set for Beginners</h2>
-  <p>This affordable brush set is perfect for everyday makeup.</p>
-
-</div>
-<div class="product">
-  <h3>Best Hair Straightener Brush for Everyday Use</h3>
-  <p>
-    Looking for a quick and easy hair styling tool? Read our full review to see if this
-    option fits your routine.
-  </p>
-  <a class="btn" href="${product.link}">
-  View on Amazon
-</a>
-</div>
-  <section class="container">
-  <div id="products" class="product-grid"></div>
 </section>
-  <div class="filter-buttons">
-  <button onclick="filterProducts('all')">All</button>
-  <button onclick="filterProducts('beauty')">Beauty</button>
-  <button onclick="filterProducts('hair')">Hair</button>
-</div>
-<div class="card">
+
+<section id="products" class="product-grid">
+
+  <div class="card">
+    <img src="assets/makeup-brush.jpg" alt="Makeup Brush Set">
+    <h2>Makeup Brush Set</h2>
+    <p>
+      This affordable brush set is perfect for beginners.
+      The bristles are soft and blend makeup beautifully.
+    </p>
+
+    <a href="https://www.amazon.com/https://amzn.to/403Ar5w"
+       class="btn"
+       target="_blank"
+       rel="nofollow noopener">
+       Buy on Amazon →
+    </a>
+  </div>
+
+  <div class="card">
+    <img src="assets/hair-brush.jpg" alt="Hair Straightener Brush">
+    <h2>Hair Straightener Brush</h2>
+    <p>
+      A quick and easy styling tool for everyday smooth hair.
+      Great for busy mornings.
+    </p>
+
+    <a href="https://amzn.to/4apmoMi"
+       class="btn"
+       target="_blank"
+       rel="nofollow noopener">
+       Buy on Amazon →
+    </a>
+  </div>
+
+</section>
+
+<div class="card" style="max-width:800px; margin:60px auto;">
   <h2>Affiliate Disclosure</h2>
   <p>
     This website contains affiliate links. As an Amazon Associate,
     I earn from qualifying purchases at no extra cost to you.
   </p>
 </div>
+
 <footer>
   <p>© 2026 Honest Product Reviews</p>
 </footer>
+
 <script src="js/main.js"></script>
 </body>
 </html>
