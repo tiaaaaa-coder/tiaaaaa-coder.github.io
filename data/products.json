@@ -1,14 +1,14 @@
 [
   {
-    "name": "Makeup Brush Set for Beginners",
-    "description": "Soft, affordable brushes perfect for everyday makeup and beginners.",
+    "name": "Makeup Brush Set",
+    "description": "Perfect for beginners and everyday makeup.",
     "image": "assets/makeup-brush.jpg",
-    "link": "beauty-tool-review.html"
+    "link": "https://www.amazon.com/YOUR-AFFILIATE-LINK"
   },
   {
     "name": "Hair Straightener Brush",
-    "description": "Quick styling tool that smooths hair in minutes.",
-    "image": "assets/hair-straightener.jpg",
-    "link": "hair-tool-review.html"
+    "description": "Quick and easy everyday styling tool.",
+    "image": "assets/hair-brush.jpg",
+    "link": "https://www.amazon.com/YOUR-AFFILIATE-LINK"
   }
 ]
