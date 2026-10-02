@@ -150,3 +150,19 @@ a:focus-visible, .btn:focus-visible {
   line-height: 1.8;
   margin-bottom: 20px;
 }
+.inline-disclosure { text-align: center; font-size: 14px; opacity: 0.8; margin: -20px 20px 30px; }
+.toolbar { display: flex; flex-direction: column; align-items: center; gap: 16px; padding: 0 20px; }
+.toolbar input {
+  width: 100%; max-width: 420px; padding: 12px 20px;
+  border: 1px solid var(--soft-burnt-red); border-radius: 30px;
+  font: inherit; background: white;
+}
+.filters { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
+.chip {
+  font: inherit; font-size: 14px; padding: 8px 18px; cursor: pointer;
+  border: 1px solid var(--burnt-red); border-radius: 30px;
+  background: transparent; color: var(--burnt-red);
+}
+.chip.active, .chip:hover { background: var(--burnt-red); color: var(--cream); }
+.card .meta { padding-bottom: 5px; font-size: 14px; color: var(--soft-burnt-red); }
+.grid-message { grid-column: 1 / -1; text-align: center; }
