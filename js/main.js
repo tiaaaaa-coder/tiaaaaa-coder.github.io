@@ -1,6 +1,7 @@
-(function () {
+
+   (function () {
   const grid = document.getElementById('product-grid');
-  if (!grid) return; // only runs on pages that have the grid
+  if (!grid) return; // other pages (about, contact, privacy) have no grid
 
   const filters = document.getElementById('filters');
   const search = document.getElementById('search');
@@ -82,4 +83,4 @@
     });
 
   if (search) search.addEventListener('input', render);
-})();
+})();  
