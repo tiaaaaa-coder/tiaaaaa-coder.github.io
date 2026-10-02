@@ -12,7 +12,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css"></head>
-<body>
+  <script src="js/main.js"></script>
+<script src="js/products.js"></script>
+  <body>
 
 <header>
   <p>Hooked.on.you.by.jameela</p>
@@ -33,42 +35,15 @@
   </div>
 </section>
 
-<section id="products" class="product-grid">
-
-  <div class="card">
-    <img src="assets/makeup-brush.jpg" alt="Makeup Brush Set">
-    <h2>Makeup Brush Set</h2>
-    <p>
-      This affordable brush set is perfect for beginners.
-      The bristles are soft and blend makeup beautifully.
-    </p>
-
-    <a href="https://amzn.to/3Or5LZs"
-       class="btn"
-       target="_blank"
-       rel="nofollow noopener">
-       Buy on Amazon →
-    </a>
+<section id="products">
+  <h2 class="section-title">Latest Reviews</h2>
+  <p class="inline-disclosure">This page contains affiliate links, so I may earn a commission at no extra cost to you.</p>
+  <div class="toolbar">
+    <input type="search" id="search" placeholder="Search reviews…" aria-label="Search reviews">
+    <div id="filters" class="filters"></div>
   </div>
-
-  <div class="card">
-    <img src="assets/hair-brush.jpg" alt="Hair Straightener Brush">
-    <h2>Hair Straightener Brush</h2>
-    <p>
-      A quick and easy styling tool for everyday smooth hair.
-      Great for busy mornings.
-    </p>
-
-    <a href="https://amzn.to/3MomtYT"
-       class="btn"
-       target="_blank"
-       rel="nofollow noopener">
-       Buy on Amazon →
-    </a>
-  </div>
-
+  <div id="product-grid" class="product-grid"></div>
 </section>
-
 
 <div class="card" style="max-width:800px; margin:60px auto;">
   <h2>Affiliate Disclosure</h2>
